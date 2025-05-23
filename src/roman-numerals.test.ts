@@ -7,4 +7,9 @@ describe('RomanNumeral', () => {
   it('should convert I to 1', () => {
     expect(roman.of('I')).toBe(1);
   });
+
+  it('should convert II to 2', () => {
+  expect(roman.of('II')).toBe(2);
+});
+
 });
