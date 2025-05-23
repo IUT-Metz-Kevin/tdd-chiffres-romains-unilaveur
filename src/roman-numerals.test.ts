@@ -1,1 +1,10 @@
-// Write your test here
+import { describe, it, expect } from 'vitest';
+import { RomanNumeral } from './RomanNumeral.js';
+
+describe('RomanNumeral', () => {
+  const roman = new RomanNumeral();
+
+  it('should convert I to 1', () => {
+    expect(roman.of('I')).toBe(1);
+  });
+});
