@@ -12,4 +12,8 @@ describe('RomanNumeral', () => {
   expect(roman.of('II')).toBe(2);
 });
 
+it('should convert III to 3', () => {
+  expect(roman.of('III')).toBe(3);
+});
+
 });
