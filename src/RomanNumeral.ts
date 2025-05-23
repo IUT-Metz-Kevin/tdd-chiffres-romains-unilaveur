@@ -1,7 +1,11 @@
 export class RomanNumeral {
+  private romanMap: Record<string, number> = { I: 1 };
+
   of(value: string): number {
-    if (value === 'I') return 1;
-    if (value === 'II') return 2;
-    return 0;
+    let total = 0;
+    for (let i = 0; i < value.length; i++) {
+      total += this.romanMap[value[i]];
+    }
+    return total;
   }
 }
