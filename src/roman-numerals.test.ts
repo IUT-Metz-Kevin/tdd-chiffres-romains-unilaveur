@@ -16,4 +16,9 @@ it('should convert III to 3', () => {
   expect(roman.of('III')).toBe(3);
 });
 
+it('should convert IV to 4', () => {
+  expect(roman.of('IV')).toBe(4);
+});
+
+
 });
